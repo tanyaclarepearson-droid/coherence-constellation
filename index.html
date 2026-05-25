@@ -1,0 +1,145 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Coherence Works Constellation — Page 1</title><style>
+:root{
+  --ink:#102347;
+  --navy:#071a54;
+  --soft:#5a6f96;
+  --blue:#eef3ff;
+  --gold:#fff7e8;
+  --line:rgba(16,35,71,.10);
+  --shadow:0 14px 34px rgba(16,35,71,.08);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(123,108,232,.12), transparent 28%),
+    radial-gradient(circle at 88% 10%, rgba(244,188,66,.12), transparent 26%),
+    linear-gradient(180deg,#f7f9ff,#fffaf2);
+  font-family:"Satoshi","Inter","Avenir Next",Arial,sans-serif;
+  color:var(--ink);
+}
+.page{width:min(1100px,92vw);margin:0 auto;padding:34px 0 70px}
+.topnav{
+  position:sticky;top:0;z-index:20;
+  backdrop-filter:blur(14px);
+  background:rgba(247,249,255,.84);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{
+  width:min(1100px,92vw);margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:12px 0;gap:14px;flex-wrap:wrap;
+}
+.brand{
+  color:var(--navy);text-decoration:none;font-weight:950;letter-spacing:.02em;
+}
+.links{display:flex;gap:8px;flex-wrap:wrap}
+.links a{
+  text-decoration:none;color:var(--navy);
+  padding:8px 11px;border-radius:999px;
+  border:1px solid rgba(7,26,84,.12);
+  background:rgba(255,255,255,.70);
+  font-weight:850;font-size:13px;
+}
+.links a.active{background:var(--navy);color:white}
+.hero{text-align:center;padding:42px 30px 20px}
+.hero h1{
+  font-family:"Satoshi","Arial Black",Impact,sans-serif;
+  font-size:clamp(48px,7vw,76px);
+  letter-spacing:-.045em;
+  line-height:.94;
+  margin:0;
+  color:var(--navy);
+}
+.sub{margin-top:18px;font-size:22px;color:var(--soft);font-weight:800}
+.intro,.quote-box{
+  margin:26px auto 0;max-width:860px;padding:24px 28px;
+  border-radius:28px;background:rgba(255,255,255,.76);
+  border:1px solid var(--line);box-shadow:0 14px 32px rgba(16,35,71,.08);
+  font-size:21px;line-height:1.5;color:#1d3769;
+}
+.quote-box{
+  font-family:"Cormorant Garamond","EB Garamond",Georgia,serif;
+  font-size:25px;line-height:1.38;
+}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.card,.cluster{
+  background:white;border-radius:30px;padding:28px;
+  border:1px solid var(--line);box-shadow:var(--shadow);
+}
+.cluster{position:relative;overflow:hidden}
+.cluster:before{content:"";position:absolute;inset:0 0 auto 0;height:8px;background:linear-gradient(90deg,#7b6ce8,#f4bc42,#7d9a6e)}
+.card h2,.cluster h2{margin:0 0 10px;color:var(--navy);font-size:30px;letter-spacing:-.03em}
+.card p,.card li,.cluster p,.cluster li{color:#31446d;line-height:1.58;font-size:17px}
+.band,.core,.compass{
+  margin-top:34px;padding:34px;border-radius:34px;
+  background:linear-gradient(135deg,var(--blue),var(--gold));
+  border:1px solid var(--line);
+}
+.band h2,.core h2,.compass h2{margin:0 0 14px;font-size:38px;color:var(--navy);letter-spacing:-.035em}
+.band p,.core p,.compass p{font-size:19px;line-height:1.55;color:#31446d;font-weight:650}
+.pills,.songs{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.pill,.song{
+  padding:10px 14px;border-radius:999px;background:white;
+  border:1px solid rgba(16,35,71,.12);
+  font-weight:850;color:#1f3969;font-size:13px;
+}
+.tag,.energy{
+  display:inline-block;padding:9px 13px;border-radius:999px;background:#eef3ff;
+  color:var(--navy);font-size:12px;font-weight:950;margin-bottom:14px;
+  text-transform:uppercase;letter-spacing:.04em;
+}
+.flow,.timeline,.orbit{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.flow{grid-template-columns:repeat(4,1fr)}
+.step,.phase,.node{
+  padding:20px;border-radius:24px;background:white;border:1px solid var(--line);
+  box-shadow:0 10px 24px rgba(16,35,71,.06);text-align:center;
+}
+.step strong,.phase strong,.node strong{display:block;color:var(--navy);font-size:22px;margin-bottom:8px}
+.step span,.phase span,.node span{color:#5a6f96;font-weight:750;line-height:1.5}
+.quote{
+  margin-top:34px;padding:28px;border-radius:30px;background:var(--navy);color:white;
+  font-family:"Cormorant Garamond","EB Garamond",Georgia,serif;
+  font-size:27px;line-height:1.35;text-align:center;box-shadow:0 18px 40px rgba(7,26,84,.18);
+}
+.footer{text-align:center;margin-top:40px;color:#62769d;font-weight:750}
+.nextbar{
+  margin-top:34px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap;
+}
+.nextbar a{
+  text-decoration:none;font-weight:900;border-radius:999px;padding:12px 18px;
+  border:1px solid rgba(7,26,84,.14);background:white;color:var(--navy);
+}
+.nextbar a.primary{background:var(--navy);color:white}
+@media(max-width:900px){.grid,.grid3,.flow,.timeline,.orbit{grid-template-columns:1fr}.hero{padding:32px 10px 14px}.hero h1{font-size:44px}}
+</style></head><body>
+<nav class="topnav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Coherence Works Constellation</a>
+    <div class="links">
+      <a class="active" href="index.html">Page 1</a><a class="" href="page2.html">Page 2</a><a class="" href="page3.html">Page 3</a><a class="" href="page4.html">Page 4</a><a class="" href="page5.html">Page 5</a><a class="" href="page6.html">Page 6</a>
+    </div>
+  </div>
+</nav>
+<div class="page">
+<section class="hero">
+<h1>Coherence Works<br>Constellation</h1>
+<div class="sub">Page 1 • North Star + Core Gravitational Centers</div>
+<div class="quote-box">“What if the world is more relational, developmental, and alive than we were taught to see?”</div>
+</section>
+<section class="core">
+<h2>North Star Orientation</h2>
+<p>This ecosystem is not organized as a rigid hierarchy or product map. It behaves more like a living constellation: a relational ecology of pathways, songs, frameworks, tools, reflections, and developmental supports.</p>
+<p>Different people may enter through different doors — a song, a reflection tool, a classroom snapshot, a framework, or a multilingual pathway — but the deeper orientation remains shared:</p>
+<div class="pills">
+<div class="pill">Conditions shape possibility</div><div class="pill">Recognition before persuasion</div><div class="pill">Joy isn’t extra</div><div class="pill">What lasts is what’s held</div><div class="pill">Presence does not imply pressure</div><div class="pill">Teach the feeling. Learning will remember.</div>
+</div>
+</section>
+<section class="grid">
+<div class="card"><h2>Coherence Works</h2><p>Developmental architecture ecosystem.</p><ul><li>Pathways</li><li>Frameworks</li><li>Dashboards</li><li>Reflection tools</li><li>Conditions calibration</li><li>Temporal development</li></ul></div>
+<div class="card"><h2>SongBridge</h2><p>Emotional and rhythmic embodiment layer.</p><ul><li>Developmental songs</li><li>Regulation supports</li><li>Belonging pathways</li><li>Identity & becoming</li><li>Multilingual expression</li><li>Emotional reinforcement through rhythm</li></ul></div>
+<div class="card"><h2>Teacher Mode</h2><p>Practice-facing noticing and tuning.</p><ul><li>Reflective prompts</li><li>Classroom pacing</li><li>Atmosphere shaping</li><li>Daily discernment</li><li>Conditions awareness</li></ul></div>
+<div class="card"><h2>Coherence Mixer</h2><p>Multi-scale conditions tuning.</p><ul><li>Classroom</li><li>School</li><li>District</li><li>Community</li><li>Signal ranges</li><li>Readiness & orchestration</li></ul></div>
+</section>
+<div class="nextbar"><a class="primary" href="page2.html">Next →</a></div><div class="footer">Constellation Draft • Organic Coherence • Page 1 of a living map</div></div></body></html>
